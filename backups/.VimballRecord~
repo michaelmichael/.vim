@@ -1,2 +1,0 @@
-EvalSelection.vba: call delete('/Users/michael/.vim/doc/EvalSelection.txt')|call delete('/Users/michael/.vim/plugin/EvalSelection.vim')|call delete('/Users/michael/.vim/ruby/EvalSelection.rb')|call delete('/Users/michael/.vim/syntax/EvalSelectionLog.vim')
-supertab.vba: call delete('/Users/michael/.vim/doc/supertab.txt')|call delete('/Users/michael/.vim/plugin/supertab.vim')
