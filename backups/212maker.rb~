@@ -1,0 +1,71 @@
+# require 'date'
+# require 'time'
+# 
+# puts "Please input the first date (MM/DD/YYYY)"
+# american_date = '%m/%d/%Y'
+# first_date = DateTime.strptime(gets.chomp, american_date)
+# 
+# Puts "Please input product separated by commas"
+
+class Book
+  @@books = {}
+  attr_reader :title, :weekly_sales
+
+  def initialize(title, sales=0)
+    @title = title
+    @weekly_sales = sales
+  end
+
+  def add_sales(sales)
+    @weekly_sales += sales
+  end
+end
+
+x = Book.new("hello")
+y = Book.new("happy")
+puts x.title
+puts x.weekly_sales
+x.add_sales(3)
+puts y.title
+
+# weekly_sales = {}
+# puts 'Please input a list of books'
+# book_list = <<END_STRING
+# The Great Gatsby (AOTM)
+# Crime and Punishment
+# Dracula
+# END_STRING
+# 
+# books = book_list.split(/\n/)
+# 
+# books.each do | book |
+# puts "Please input weekly sales of #{book} separated by a comma."
+#   weekly_sales[book] = gets.chomp.split(/\t/)
+# end
+
+
+
+# if arrays.count != raw_titles.count puts "Error!"
+
+# array = [11, 20, 660, 2544, 1113, 1388, 1198, 58, 30]
+# array2 = [40, 30, 44, 48, 27, 24, 28, 16, 26]
+# # ecc = blah
+# # itunes_price = blahblah
+# # promo_ecc = blah
+# # promo_itunes_price = blahblah
+# 
+# if array.count != array2.count
+#   puts "Arrays contain different numbers of weeks."
+#   exit
+# end
+# 
+# x = array.count
+# y = 0
+# x.times do |i|
+#   preformatted_date = (first_date += 7)
+#   puts preformatted_date.strftime('%D')
+#   puts array[y]
+#   puts array2[y]
+#   y += 1
+# end
+# 

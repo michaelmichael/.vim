@@ -1,0 +1,25 @@
+class  Audiobook
+  def price_input
+    puts "Please input the Apple Selling Price"
+    @apple_selling_price = gets.chomp.to_f
+    puts "Please input the eCC"
+    @ecc = gets.chomp.to_f
+    standard = (@apple_selling_price - @ecc) * 0.4 + @ecc
+    floor = (@ecc * 0.3) + @ecc
+    if
+      standard > floor
+      @rev_from_apple = standard
+    elsif
+      standard < floor
+      @rev_from_apple = floor
+      puts "Floor applied!"
+    end
+    print "Net Revenue\tAudible Revenue\tApple Revenue\n"
+    print "$%.2f" % "#{@rev_from_apple}"
+    print "\t$%.2f" % "#{@rev_from_apple - @ecc}"
+    print "\t$%.2f" % "#{@apple_selling_price - @rev_from_apple}\n"
+  end
+end
+
+a=Audiobook.new
+a.price_input

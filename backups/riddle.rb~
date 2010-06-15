@@ -1,0 +1,26 @@
+# Strict definition of my_times
+class Integer
+  def my_times
+    c = 0
+    until c == self
+      yield(c)
+      c += 1
+    end
+    self
+  end
+end
+
+# Strict definition of my_each
+class Array
+  def my_each
+    c = 0
+    until c == size
+      yield(self[c])
+      c += 1
+    end
+    self
+  end
+end
+
+# Definition of my_times using my_each
+

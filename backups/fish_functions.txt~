@@ -1,0 +1,15 @@
+michael@mmc ~> funced mtd
+mtd> function mtd
+         ~/bin/lookup $argv
+         g ~/packages/received/$argv.itmsp/metadata.xml
+     
+     end
+     exit
+michael@mmc ~> funced g
+g> function g
+       mvim --remote-silent $argv
+   
+   end
+   exit
+michael@mmc ~> which mvim
+/usr/local/bin/mvim

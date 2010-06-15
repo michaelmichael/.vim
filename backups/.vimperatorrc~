@@ -1,0 +1,2 @@
+colorscheme obsidian
+javascript liberator.beep = function() { return false; }

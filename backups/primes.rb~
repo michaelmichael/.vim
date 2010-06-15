@@ -1,0 +1,27 @@
+Hi There
+candidate = 3
+primes = 1
+
+while primes < 1000
+  
+  primeness = 0
+  divisor = 2
+
+  while divisor <= (candidate / 2) and primeness == 0
+    test = candidate % divisor
+    if test == 0
+      primeness += 1
+    end
+    divisor += 1
+  end
+
+  if primeness == 0
+    primes += 1
+    puts candidate
+  else
+    primeness = 0
+  end
+  
+  candidate += 2
+
+end

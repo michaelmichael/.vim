@@ -1,0 +1,33 @@
+class Message
+  attr_accessor :content
+
+  @@letter_code = {}
+
+  letters = ('A'..'Z').map {|l| l}.each_with_index do |l,i|
+    @@letter_code[l] = i + 1
+  end
+  
+  def initialize
+    puts "Enter the message."
+    self.content = gets.chomp
+  end
+
+  def sanitize(content)
+    @content = content.upcase.gsub(/\W/, "")
+    until @content.length % 5 == 0
+      @content += "X"
+    end
+    @content
+  end
+
+  def letters_to_numbers
+    @content = content
+    sanitize(content).each_char do |c|
+      print @@letter_code[c], " "
+    end
+  end
+
+end
+
+x = Message.new
+puts x.sanitize(x.content)
