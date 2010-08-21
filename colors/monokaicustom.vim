@@ -29,11 +29,11 @@ highlight clear
 if exists("syntax_on")
     syntax reset
 endif
-let g:colors_name = "oceancustom"
+let g:colors_name = "monokaicustom"
 
 """" GUI 
 
-highlight Cursor        gui=None guibg=PaleTurquoise3 guifg=White
+highlight Cursor        gui=None guibg=#00FFFF guifg=White
 highlight CursorIM      gui=bold guifg=white guibg=PaleTurquoise3
 highlight CursorLine    gui=None guibg=#003853
 highlight CursorColumn  gui=None guibg=#003853
@@ -55,9 +55,9 @@ if version < 600
     highlight NonText   guibg=#123A4A guifg=#3D5D6D
 else
     " Bottom fill (use e.g. same as LineNr)
-    highlight NonText   gui=None guibg=#06071D guifg=LightSkyBlue
+    highlight NonText   gui=None guibg=#272822 guifg=LightSkyBlue
 endif
-highlight Normal        gui=None guibg=#06071D guifg=honeydew2
+highlight Normal        gui=None guibg=#272822 guifg=honeydew2
 highlight Question      gui=bold  guifg=SeaGreen2 guibg=bg
 highlight Search        gui=NONE guibg=LightSkyBlue4 guifg=NONE
 highlight SpecialKey    guibg=#103040 guifg=#324262
@@ -69,9 +69,9 @@ highlight VisualNOS     gui=bold,underline guifg=fg guibg=bg
 highlight WarningMsg    gui=bold guifg=FireBrick1 guibg=bg
 highlight WildMenu      gui=bold guibg=Chartreuse guifg=Black
 
-highlight Comment       gui=None guifg=#507080
+highlight Comment       gui=None guibg=#EE3A8C guifg=WHITE
 highlight Constant      guifg=cyan3 guibg=bg
-highlight String        gui=None guifg=turquoise2 guibg=bg
+highlight String        gui=None guifg=#E7005F guibg=bg
 highlight Number        gui=None guifg=Cyan guibg=bg
 highlight Boolean       gui=bold guifg=Cyan guibg=bg
 highlight Identifier    guifg=LightSkyBlue3
@@ -102,10 +102,10 @@ highlight Error         guifg=LightYellow  guibg=FireBrick
 highlight Todo          guifg=Cyan guibg=#507080
 
 "Custom Ruby highlighting
-hi rubyConstant         gui=None guifg=#60A4F1 guibg=bg
-hi rubyClassVariable    gui=None guifg=#B684CA guibg=bg
-hi rubyInstanceVariable gui=None guifg=#B684CA guibg=bg
-hi rubyClass            gui=None guifg=#62E9BD guibg=bg
+hi rubyConstant         gui=None guifg=#AE81FF guibg=bg
+hi rubyClassVariable    gui=None guifg=#FF13BE guibg=bg
+hi rubyInstanceVariable gui=None guifg=#FF13BE guibg=#800080
+hi rubyClass            gui=None guifg=#A6E22E guibg=#000000
 hi rubyAttribute        gui=None guifg=#2BF1DC guibg=bg
 hi rubySymbol           gui=None guifg=#62E9BD guibg=bg
 hi rubyBlock            gui=None guifg=#2BF1DC guibg=bg
