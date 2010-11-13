@@ -17,7 +17,7 @@ set ignorecase
 set wildmenu
 set smarttab
 set number
-colorscheme underwater-mod
+colorscheme fruit
 set gfn=Menlo:h14.00
 set guioptions-=T "remove toolbar
 set transp=3
